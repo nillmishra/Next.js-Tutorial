@@ -1,27 +1,15 @@
-import { Metadata } from "next";
-import Link from "next/link";
-export const metadata : Metadata = {
-  // title: 'My Next.js App',
-  title: {
-    default: 'My Next.js App',
-    template: '%s | My Next.js App',
-    //absolute: true,
-  },
+export const metadata = {
+  title: 'My Next.js App',
   description: 'A simple Next.js application with routing',
 };
 
-export default function RootLayout({ 
+export default function AuthLayout({ 
   children, 
   }: { children: React.ReactNode 
   }) {
   return (
     <html lang="en">
         <body>
-          <header
-          style={{
-            backgroundColor: 'lightblue',
-            padding: '1rem',
-          }}><Link href="/">Header</Link></header>
           {children}
           <footer
           style={{

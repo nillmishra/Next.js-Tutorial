@@ -1,16 +1,9 @@
-import { Metadata } from "next";
-import Link from "next/link";
-export const metadata : Metadata = {
-  // title: 'My Next.js App',
-  title: {
-    default: 'My Next.js App',
-    template: '%s | My Next.js App',
-    //absolute: true,
-  },
+export const metadata = {
+  title: 'My Next.js App',
   description: 'A simple Next.js application with routing',
 };
 
-export default function RootLayout({ 
+export default function MarketingLayout({ 
   children, 
   }: { children: React.ReactNode 
   }) {
@@ -21,7 +14,7 @@ export default function RootLayout({
           style={{
             backgroundColor: 'lightblue',
             padding: '1rem',
-          }}><Link href="/">Header</Link></header>
+          }}></header>
           {children}
           <footer
           style={{

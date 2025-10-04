@@ -1,0 +1,14 @@
+"use client";
+import { useState } from 'react';
+
+export const Counter = () => {
+  const [count, setCount] = useState(0);
+    return (
+    <main style={{ padding: '1rem' }}>
+      <h1>Counter Page</h1>
+      <p>Current Count: {count}</p> 
+        <button onClick={() => setCount(count + 1)}>Increment</button>
+        <button onClick={() => setCount(count - 1)} style={{ marginLeft: '1rem' }}>Decrement</button>
+    </main>
+  );
+}
